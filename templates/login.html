@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.bootcss.com/vue/2.5.17-beta.0/vue.js"></script>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2" role="form">
+            <form action="" method="post">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label>用户名：<input type="text" class="form-control"
+                                                 name="username" placeholder="请输入用户名"></label>
+                </div>
+                <div>
+                    <label>密码：<input type="password" class="form-control" name="pwd"
+                                               placeholder="请输入密码"></label>
+                </div>
+                <input type="submit" class="btn btn-success">
+            </form>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
